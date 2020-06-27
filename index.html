@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        浙江大学通行码 </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<script>
+    if (true) {
+        //获取系统时间
+        function showTime() {
+            nowtime = new Date()
+            year = nowtime.getFullYear()
+            month = nowtime.getMonth() + 1
+            day = nowtime.getDate()
+            hour = nowtime.getHours()
+            minutes = nowtime.getMinutes()
+            seconds = nowtime.getSeconds()
+            document.getElementById("div_timer").style = "white-space:pre"
+            document.getElementById("div_timer").innerText = p(month) + "月" + p(day) + "日" + p(hour) + ":" + p(minutes) + ":" + p(seconds)
+        }
+        setInterval("showTime()", 1000)
+        function p(s) {
+            return s < 10 ? '0' + s : s
+        }
+    }
+</script>
+
+<body class='blue-bg'>
+    <div class='banner'>
+        <img src="picture/3.png" alt="">
+    </div>
+    <div class="content-box">
+        <div class="top-title">
+            <h3>王坤的通行码</h3>
+            <span class="bgr-blue">研究生</span>
+        </div>
+        <strong>
+            <div class="time2" id="div_timer" style="white-space: pre;"></div>
+        </strong>
+        <div class="qr">
+            <div id="output" style="margin-top: 10px;margin-bottom: 10px;">
+                <img src="./picture/2.png" alt="">
+            </div>
+            <div class="time">有效期：2020-06-24 - 2020-06-30</div>
+        </div>
+        <div id="hzjkm">
+            <div class="hz" style="color: #55b957;">健康码为 绿码</div>
+        </div>
+        <div id="dateTime">
+            <div class="time">同步时间：2020-06-25 09:34:11</div>
+        </div>
+        <p class="tip" style="margin-top: 10px;">
+            凭蓝码可在浙江大学校园内通行
+            <br>
+            请主动出示，配合检查
+        </p>
+        <div style="text-align: center;margin-top: 10px;">
+            <a href="http://one.zju.edu.cn/taskcenter/wechat/index">办事大厅</a>&nbsp;&nbsp;&nbsp;
+            <a href="/pass_code/zx/grtList">申请记录</a>&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <div class="bottom-tip">
+        <h3>安保处 ：0571-88206110</h3>
+        <a href="" class="link-btn">常见问题</a>
+        <h3>技术支持：0571-87951669</h3>
+    </div>
+
+</body>
+
+</html>

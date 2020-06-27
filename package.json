@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "rm -rf dist && parcel build index.html --no-minify --public-url ./"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  },
+  "name": "逃出校园计划",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Freddy-Gong/school.git",
+  "author": "Freedy <21914103@zju.edu.cn>",
+  "license": "MIT"
+}
